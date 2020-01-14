@@ -1,0 +1,16 @@
+.header-container {
+  border: 1px solid red;
+  display: flex;
+}
+
+.menu {
+  flex: 1;
+}
+
+.icons {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+}
