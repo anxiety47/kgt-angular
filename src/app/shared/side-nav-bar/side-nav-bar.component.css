@@ -1,0 +1,14 @@
+#menu-content {
+    transition: 1s;
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    min-height: 20rem;
+}
+
+.menu-hidden {
+    width: 0;
+}
+
+.menu-visible {
+    width: 20rem;
+}

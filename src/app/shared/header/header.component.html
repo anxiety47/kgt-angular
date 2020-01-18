@@ -1,12 +1,22 @@
 <div class="header-container">
   <div class="menu" (click)="toggleMenu()">
-    <div class="menu-icon"><fa-icon [icon]="faMenuIcon"></fa-icon></div>
-    <div class="menu-text">Menu</div>
+    <div (click)="toggleMenuIcon($event)" id="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div *ngIf="!isMenuShown" class="menu-text">Menu</div>
   </div>
   <div class="icons">
-    <div class="kgt-icon"><fa-icon [icon]="faKgtIcon"></fa-icon></div>
-    <div class="fb-icon"><fa-icon [icon]="faFbIcon"></fa-icon></div>
-    <div class="instagram-icon"><fa-icon [icon]="faInstagramIcon"></fa-icon></div>
+    <div class="kgt-icon">
+      <fa-icon [icon]="faKgtIcon"></fa-icon>
+    </div>
+    <div class="fb-icon">
+      <fa-icon [icon]="faFbIcon"></fa-icon>
+    </div>
+    <div class="instagram-icon">
+      <fa-icon [icon]="faInstagramIcon"></fa-icon>
+    </div>
   </div>
   <div class="buttons">
     <button class="login-button">Zaloguj</button>

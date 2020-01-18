@@ -13,12 +13,19 @@ export class HeaderComponent implements OnInit {
   faFbIcon = faFacebook;
   faInstagramIcon = faInstagram;
 
+  isMenuShown;
+
   constructor(private sidenavbarService: SideNavBarService) { }
 
   ngOnInit() {
+    this.sidenavbarService.isMenuVisible.subscribe( data => this.isMenuShown = data);
   }
 
   toggleMenu() {
     this.sidenavbarService.toggleMenu();
+  }
+
+  toggleMenuIcon() {
+    document.getElementById('menu-icon').classList.toggle('open');
   }
 }
