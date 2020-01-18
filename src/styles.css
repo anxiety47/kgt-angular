@@ -1,3 +1,16 @@
 body {
     margin: 0;
 }
+
+:root {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12pt;
+
+    /* colors */
+    --color-white: #fff;
+    --color-light-grey: #bababa;
+    --color-grey: #34495e;
+    --color-grey-hover: #415b76;
+    --color-grey-text: #4D5051;
+    --color-dark-grey: #1b1b1b;
+}

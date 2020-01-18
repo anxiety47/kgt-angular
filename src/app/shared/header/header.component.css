@@ -1,10 +1,17 @@
 .header-container {
   border: 1px solid red;
   display: flex;
+  align-items: center;
+  height: 2.5rem;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+
 }
 
 .menu {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .icons {
@@ -13,4 +20,10 @@
 
 .buttons {
   display: flex;
+}
+
+.fb-icon, .instagram-icon, .kgt-icon, .menu-icon {
+  height: 1rem;
+  width: 1rem;
+  padding: 0.5rem;
 }
