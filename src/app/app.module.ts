@@ -7,7 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { SideNavBarComponent } from './shared/side-nav-bar/side-nav-bar.component';
 
 const appRoutes: Routes = [
   { path: 'login-form', component: LoginFormComponent },
@@ -25,7 +25,7 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     LoginFormComponent,
-    NavBarComponent
+    SideNavBarComponent
   ],
   imports: [
     RouterModule.forRoot(
