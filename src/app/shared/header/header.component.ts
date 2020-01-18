@@ -13,12 +13,22 @@ export class HeaderComponent implements OnInit {
   faFbIcon = faFacebook;
   faInstagramIcon = faInstagram;
 
-  isMenuShown;
+  isMenuShown = false;
 
   constructor(private sidenavbarService: SideNavBarService) { }
 
   ngOnInit() {
-    this.sidenavbarService.isMenuVisible.subscribe( data => this.isMenuShown = data);
+    this.sidenavbarService.isMenuVisible.subscribe( data => {
+      this.isMenuShown = data;
+      if (this.isMenuShown) {
+        document.getElementById('menu-text').classList.add('menu-text-hidden');
+        document.getElementById('menu-text').classList.remove('menu-text-visible');
+      } else {
+        document.getElementById('menu-text').classList.remove('menu-text-hidden');
+        document.getElementById('menu-text').classList.add('menu-text-visible');
+
+      }
+    });
   }
 
   toggleMenu() {
