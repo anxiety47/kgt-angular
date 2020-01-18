@@ -1,5 +1,4 @@
 .header-container {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   height: 2.5rem;
@@ -14,6 +13,11 @@
   align-items: center;
 }
 
+.menu-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .icons {
   display: flex;
 }
@@ -23,7 +27,8 @@
 }
 
 .fb-icon, .instagram-icon, .kgt-icon, .menu-icon {
-  height: 1rem;
-  width: 1rem;
+  height: 1.4rem;
+  width: 1.4rem;
   padding: 0.5rem;
+  font-size: 1.4rem;
 }
