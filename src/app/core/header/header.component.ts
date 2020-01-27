@@ -32,10 +32,11 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
+    this.toggleMenuIcon();
     this.sidenavbarService.toggleMenu();
   }
 
-  toggleMenuIcon() {
+  private toggleMenuIcon() {
     document.getElementById('menu-icon').classList.toggle('open');
   }
 }
