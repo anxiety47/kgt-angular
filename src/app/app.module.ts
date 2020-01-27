@@ -11,7 +11,7 @@ import { SideNavBarComponent } from './shared/side-nav-bar/side-nav-bar.componen
 
 const appRoutes: Routes = [
   { path: 'login-form', component: LoginFormComponent },
-  //TODO: add default path and pageNotFoundComponent
+  // TODO: add default path and pageNotFoundComponent
   // { path: 'hero/:id',      component: HeroDetailComponent },
   // { path: '',
   //   redirectTo: '/heroes',

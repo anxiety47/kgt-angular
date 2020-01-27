@@ -2,7 +2,7 @@
     transition: 1s;
     background-color: var(--color-grey);
     color: var(--color-white);
-    min-height: 20rem;
+    height: 100%;
 }
 
 .menu-hidden {
@@ -11,4 +11,12 @@
 
 .menu-visible {
     width: 20rem;
+}
+
+.list {
+  background-color:black;
+  height: 50%;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
 }
