@@ -1,8 +1,8 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { SideNavBarComponent } from './shared/side-nav-bar/side-nav-bar.component';
+import { HeaderComponent } from './core/header/header.component';
+import { SideNavBarComponent } from './core/side-nav-bar/side-nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 describe('AppComponent', () => {
