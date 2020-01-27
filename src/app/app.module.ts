@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent } from './core/authentication/login-form/login-form.component';
 import { SideNavBarComponent } from './core/side-nav-bar/side-nav-bar.component';
+import { HomeComponent } from './modules/home/home/home.component';
 
 const appRoutes: Routes = [
   { path: 'login-form', component: LoginFormComponent },
@@ -20,12 +21,14 @@ const appRoutes: Routes = [
   // { path: '**', component: PageNotFoundComponent }
 ];
 
+// TODO: use core/shared/module ***.module.ts files
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginFormComponent,
-    SideNavBarComponent
+    SideNavBarComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(
