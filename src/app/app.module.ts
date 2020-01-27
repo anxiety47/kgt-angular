@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginFormComponent } from './login-form/login-form.component';
+import { LoginFormComponent } from './core/authentication/login-form/login-form.component';
 import { SideNavBarComponent } from './core/side-nav-bar/side-nav-bar.component';
 
 const appRoutes: Routes = [
@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   // },
   // { path: '**', component: PageNotFoundComponent }
 ];
- 
+
 @NgModule({
   declarations: [
     AppComponent,
