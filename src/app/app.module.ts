@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginFormComponent } from './core/authentication/login-form/login-form.component';
 import { SideNavBarComponent } from './core/side-nav-bar/side-nav-bar.component';
 import { HomeComponent } from './modules/home/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // TODO: use core/shared/module ***.module.ts files
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './modules/home/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

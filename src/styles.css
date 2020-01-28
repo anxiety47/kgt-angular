@@ -14,3 +14,4 @@ body {
     --color-grey-text: #4D5051;
     --color-dark-grey: #1b1b1b;
 }
+html, body { height: 100%; }
