@@ -9,6 +9,9 @@ import { LoginFormComponent } from './core/authentication/login-form/login-form.
 import { SideNavBarComponent } from './core/side-nav-bar/side-nav-bar.component';
 import { HomeComponent } from './modules/home/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 // TODO: use core/shared/module ***.module.ts files
 @NgModule({
@@ -23,7 +26,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
