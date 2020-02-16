@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { DogsComponent } from './modules/dogs/dogs/dogs.component';
 
 // TODO: use core/shared/module ***.module.ts files
 @NgModule({
@@ -20,7 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
     HeaderComponent,
     LoginFormComponent,
     SideNavBarComponent,
-    HomeComponent
+    HomeComponent,
+    DogsComponent
   ],
   imports: [
     BrowserModule,
