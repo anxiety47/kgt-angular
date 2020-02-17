@@ -1,16 +1,18 @@
 <!-- <p>login-form works!</p> -->
-<div class="login-form">
-  <mat-form-field class="login-input">
-    <mat-label>Login</mat-label>
-    <input matInput placeholder="Input">
-  </mat-form-field>
-  <mat-form-field class="password-input">
-    <mat-label>Hasło</mat-label>
-    <input matInput placeholder="Input">
-  </mat-form-field>
-  <button mat-button class="login-button">Zaloguj</button>
-  <div class="links-container">
-    <div>Nie masz konta? Zarejestruj się.</div>
-    <div>Nie pamiętasz hasła?</div>
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+  <div class="login-form">
+    <mat-form-field class="login-input">
+      <mat-label>Login</mat-label>
+      <input matInput placeholder="Input" formControlName="username" required>
+    </mat-form-field>
+    <mat-form-field class="password-input">
+      <mat-label>Hasło</mat-label>
+      <input matInput placeholder="Input" formControlName="password" required>
+    </mat-form-field>
+    <button mat-button class="login-button">Zaloguj</button>
+    <div class="links-container">
+      <div>Nie masz konta? Zarejestruj się.</div>
+      <div>Nie pamiętasz hasła?</div>
+    </div>
   </div>
-</div>
+</form>
