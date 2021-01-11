@@ -22,19 +22,8 @@
   margin-left: 0.3rem;
 }
 
-.icons {
-  display: flex;
-}
-
 .buttons {
   display: flex;
-}
-
-.fb-icon, .instagram-icon, .kgt-icon {
-  height: 1.4rem;
-  width: 1.4rem;
-  padding: 0.5rem;
-  font-size: 1.4rem;
 }
 
 .buttons > * {

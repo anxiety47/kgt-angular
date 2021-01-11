@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faPaw, faDog } from '@fortawesome/free-solid-svg-icons';
+import { faDog } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarAlt, faMap } from '@fortawesome/free-regular-svg-icons';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
@@ -9,10 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  // faMenuIcon = faBars;
-  faKgtIcon = faPaw;
-  faFbIcon = faFacebook;
-  faInstagramIcon = faInstagram;
 
   faDogsIcon = faDog;
   faTrainingsIcon = faMap;
