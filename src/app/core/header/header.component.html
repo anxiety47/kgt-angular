@@ -1,10 +1,19 @@
 <div class="header-container">
   <div id="menu-content">
     <div class="category-list">
-      <div class="category" routerLink="/dogs" routerLinkActive="active">Psy</div>
+      <div class="category" routerLink="/dogs" routerLinkActive="active">
+        <fa-icon [icon]="faDogsIcon"></fa-icon>
+        <span>Psy</span>
+      </div>
       <div class="category" routerLink="/login-form" routerLinkActive="active">Przewodnicy</div>
-      <div class="category" routerLink="/login-form" routerLinkActive="active">Treningi</div>
-      <div class="category" routerLink="/login-form" routerLinkActive="active">Wydarzenia</div>
+      <div class="category" routerLink="/login-form" routerLinkActive="active">
+        <fa-icon [icon]="faTrainingsIcon"></fa-icon>
+        <span>Treningi</span>
+      </div>
+      <div class="category" routerLink="/login-form" routerLinkActive="active">
+        <fa-icon [icon]="faEventsIcon"></fa-icon>
+        <span>Wydarzenia</span>
+      </div>
       <div class="category" routerLink="" routerLinkActive="active">Certyfikaty</div>
     </div>
   </div>
