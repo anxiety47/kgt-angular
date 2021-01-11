@@ -1,3 +1,12 @@
 <div class="dogs-container">
-    <p>dogs works!</p>
+  <ng-container *ngFor="let dog of dogs">
+    <div class="dog">
+      <div class="dog-photo"></div>
+      <div class="dog-data">
+        <div class="dog-name">{{ dog.name }}</div>
+        <div class="dog-breed">{{ dog.breed }}</div>
+        <div class= "guide-name">imię przewodnika</div>
+      </div>
+    </div>
+  </ng-container>
 </div>

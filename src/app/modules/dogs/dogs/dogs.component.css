@@ -1,4 +1,33 @@
 .dogs-container {
-    margin: 0 auto;
-    width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.dog {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  padding: 0.3rem;
+  box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dog-photo {
+  /* temporary hardcode for picture */
+  width: 95%;
+  height: 20rem;
+  background-image: url('../../../../assets/images/home-background.jpg');
+}
+
+.dog-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dog-name, .dog-breed, .guide-name {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
 }
