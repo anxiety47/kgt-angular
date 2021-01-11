@@ -1,13 +1,15 @@
 <div class="header-container">
-  <div class="menu" (click)="toggleMenu()">
-    <div id="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
+  <div id="menu-content">
+    <div class="category-list">
+      <div class="category" routerLink="/dogs" routerLinkActive="active">Psy</div>
+      <div class="category" routerLink="/login-form" routerLinkActive="active">Przewodnicy</div>
+      <div class="category" routerLink="/login-form" routerLinkActive="active">Treningi</div>
+      <div class="category" routerLink="/login-form" routerLinkActive="active">Wydarzenia</div>
+      <div class="category" routerLink="" routerLinkActive="active">Certyfikaty</div>
     </div>
-    <div id="menu-text">Menu</div>
   </div>
-  <div class="icons">
+  <!-- TODO: move to footer -->
+  <!-- <div class="icons">
     <div class="kgt-icon">
       <fa-icon [icon]="faKgtIcon"></fa-icon>
     </div>
@@ -17,7 +19,7 @@
     <div class="instagram-icon">
       <fa-icon [icon]="faInstagramIcon"></fa-icon>
     </div>
-  </div>
+  </div> -->
   <div class="buttons">
     <button class="login-button" (click)="login()">Zaloguj</button>
     <button class="registry-button">Zarejestruj</button>

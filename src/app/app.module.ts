@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginFormComponent } from './core/authentication/login-form/login-form.component';
-import { SideNavBarComponent } from './core/side-nav-bar/side-nav-bar.component';
 import { HomeComponent } from './modules/home/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -22,7 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     LoginFormComponent,
-    SideNavBarComponent,
     HomeComponent,
     DogsComponent
   ],

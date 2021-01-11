@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SideNavBarService } from './core/services/side-nav-bar.service';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +7,9 @@ import { SideNavBarService } from './core/services/side-nav-bar.service';
 })
 export class AppComponent implements OnInit {
   title = 'kgt-angular';
-  isMenuShown = false;
 
-  constructor(private sidenavbarService: SideNavBarService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.sidenavbarService.isMenuVisible.subscribe(data => this.isMenuShown = data);
   }
 }
