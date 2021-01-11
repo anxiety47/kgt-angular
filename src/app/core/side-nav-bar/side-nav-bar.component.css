@@ -1,6 +1,6 @@
 #menu-content {
     transition: 1s;
-    background-color: var(--color-grey);
+    background-color: var(--color-blue-main);
     color: var(--color-white);
     height: 100%;
 }

@@ -13,5 +13,6 @@ body {
     --color-grey-hover: #415b76;
     --color-grey-text: #4D5051;
     --color-dark-grey: #1b1b1b;
+    --color-blue-main: #12508D;
 }
 html, body { height: 100%; }
