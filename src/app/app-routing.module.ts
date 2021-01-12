@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent } from './core/authentication/login-form/login-form.component';
 import { HomeComponent } from './modules/home/home/home.component';
-import { DogsComponent } from './modules/dogs/dogs/dogs.component';
+import { DogsComponent } from './modules/dogs/components/dogs/dogs.component';
 
 const appRoutes: Routes = [
   { path: 'login-form', component: LoginFormComponent },

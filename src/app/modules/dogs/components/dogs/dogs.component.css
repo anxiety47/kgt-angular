@@ -19,7 +19,7 @@
   /* temporary hardcode for picture */
   width: 95%;
   height: 20rem;
-  background-image: url('../../../../assets/images/home-background.jpg');
+  background-image: url('../../../../../assets/images/home-background.jpg');
 }
 
 .dog-name {

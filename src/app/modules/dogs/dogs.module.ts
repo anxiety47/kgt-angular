@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DogsComponent } from './dogs/dogs.component';
+import { DogsComponent } from './components/dogs/dogs.component';
 
 @NgModule({
   declarations: [DogsComponent],
