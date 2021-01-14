@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Dog } from '@app/shared/models/dog';
-import { dogs } from './dogs-data';
+import { DogsService } from '../../services/dogs.service';
 
 @Component({
   selector: 'app-dogs',
@@ -12,10 +12,11 @@ export class DogsComponent implements OnInit {
 
   public dogs: Dog[];
 
-  constructor() { }
+  constructor(private dogsService: DogsService) { }
 
   ngOnInit() {
-    this.dogs = dogs;
+    this.dogsService.dogs$.subscribe( (dogs: Dog[]) => {
+      this.dogs = dogs;
+    });
   }
-
 }

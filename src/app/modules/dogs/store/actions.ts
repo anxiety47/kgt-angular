@@ -7,4 +7,10 @@ export class SetDogs implements Action {
   constructor(public dogs: Dog[]) {}
 }
 
-export type DogActions = SetDogs;
+export class GetDogs implements Action {
+  public readonly type = '[dogs] getDogs';
+
+  constructor() {}
+}
+
+export type DogActions = SetDogs | GetDogs;

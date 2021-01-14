@@ -1,7 +1,5 @@
-import { Dog } from "@app/shared/models/dog";
-import { createFeatureSelector, createSelector } from "@ngrx/store";
+import { AppState } from "@app/store/state";
+import { createSelector } from "@ngrx/store";
 import { DogsState } from "./state";
 
-const state = createFeatureSelector<DogsState>('dogs');
-
-export const getDogs = createSelector<object, DogsState, Dog[]>( state, (dogsState: DogsState) => dogsState.dogs );
+export const getDogs = createSelector(( state: AppState ) => state.dogs, (dogsState: DogsState) => dogsState.dogs );
