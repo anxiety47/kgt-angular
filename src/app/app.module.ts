@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -11,10 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { DogsComponent } from './modules/dogs/components/dogs/dogs.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { StoreModule } from '@ngrx/store';
+import { AppStoreModule } from './store/store.module';
+import { DogsModule } from './modules/dogs/dogs.module';
 
 // TODO: use core/shared/module ***.module.ts files
 @NgModule({
@@ -22,8 +21,7 @@ import { StoreModule } from '@ngrx/store';
     AppComponent,
     HeaderComponent,
     LoginFormComponent,
-    HomeComponent,
-    DogsComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +33,8 @@ import { StoreModule } from '@ngrx/store';
     MatButtonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    StoreModule.forRoot({}, {})
+    DogsModule,
+    AppStoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
