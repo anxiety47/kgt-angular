@@ -2,6 +2,7 @@ import { Dog, DogLevel } from "@app/shared/models/dog";
 
 export interface DogsState {
   dogs: Dog[];
+  ongoingActions: string[];
 }
 
 export const initialDogState: DogsState = {
@@ -12,5 +13,6 @@ export const initialDogState: DogsState = {
     {id: 4, name: 'Alex', breed: 'Bernardyn', dateOfBirth: new Date(), level: DogLevel.Intermediate, workmode: '', notes: 'notatki4'},
     {id: 5, name: 'Max', breed: 'Jamnik', dateOfBirth: new Date(), level: DogLevel.Begginer, workmode: '', notes: 'notatki5'},
     {id: 6, name: 'Pimpek', breed: 'Wyżeł', dateOfBirth: new Date(), level: DogLevel.Intermediate, workmode: '', notes: 'notatki6'}
-  ]
+  ],
+  ongoingActions: []
 }
