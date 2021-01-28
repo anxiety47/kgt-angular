@@ -1,41 +1,58 @@
 {
-    "author" : [ {
-        "id": 1,
-        "age" : 16,
-        "name" : "Andy"
-      }, 
+    "dogs" : [
       {
-        "id": 2,
-        "age" : 22,
-        "name" : "Lisa"
-      }
-    ],
-    "comments" : [ 
-        {
-        "id": 1,
-        "date" : "03-18-2016",
-        "message" : "Nice!"
+        "id": "1",
+        "name": "Puszek",
+        "breed": "Owczarek niemiecki",
+        "dateOfBirth": "",
+        "level": "Ekspert",
+        "workmode": "",
+        "notes": "notatki1"
       },
       {
-        "id": 2,
-        "date" : "06-21-2017",
-        "message" : "Great view!"
-      }
-    ],
-    "pictures" : [
-      {
-        "id": 1,
-        "author" : "Lisa",
-        "description" : "A wonderful view of nature",
-        "img" : "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
-        "title" : "A natural view"
+        "id": "2",
+        "name": "Azor",
+        "breed": "Golden retriever",
+        "dateOfBirth": "",
+        "level": "Zaawansowany",
+        "workmode": "",
+        "notes": "notatki2"
       },
       {
-        "id": 2,
-        "author" : "Andy",
-        "description" : "Seaside sunset",
-        "img" : "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
-        "title" : "Landscape view"
+        "id": "3",
+        "name": "Reks",
+        "breed": "Labrador",
+        "dateOfBirth": "",
+        "level": "Nowy",
+        "workmode": "",
+        "notes": "notatki3"
+      },
+      {
+        "id": "4",
+        "name": "Alex",
+        "breed": "Bernardyn",
+        "dateOfBirth": "",
+        "level": "Początkujący",
+        "workmode": "",
+        "notes": "notatki4"
+      },
+      {
+        "id": "5",
+        "name": "Max",
+        "breed": "Jamnik",
+        "dateOfBirth": "",
+        "level": "Średniozaawansowany",
+        "workmode": "",
+        "notes": "notatki5"
+      },
+      {
+        "id": "6",
+        "name": "Pimpek",
+        "breed": "Wyżeł",
+        "dateOfBirth": "",
+        "level": "Ekspert",
+        "workmode": "",
+        "notes": "notatki6"
       }
     ]
   }
