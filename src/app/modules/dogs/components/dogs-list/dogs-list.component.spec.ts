@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { DogsComponent } from './dogs.component';
+import { DogsComponent } from './dogs-list.component';
 
 describe('DogsComponent', () => {
   let component: DogsComponent;

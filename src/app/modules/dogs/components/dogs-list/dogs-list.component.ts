@@ -5,8 +5,8 @@ import { DogsService } from '../../services/dogs.service';
 
 @Component({
   selector: 'app-dogs',
-  templateUrl: './dogs.component.html',
-  styleUrls: ['./dogs.component.css']
+  templateUrl: './dogs-list.component.html',
+  styleUrls: ['./dogs-list.component.css']
 })
 
 export class DogsComponent implements OnInit, OnDestroy {
