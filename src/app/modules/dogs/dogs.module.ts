@@ -5,12 +5,15 @@ import { DogsStoreModule } from './store/dogs-store.module';
 import { DogsService } from './services/dogs.service';
 import { DogsApiService } from './services/dogs-api.service';
 import { DogsListCardComponent } from './components/dogs-list/dogs-list-card/dogs-list-card.component';
+import { RouterModule } from '@angular/router';
+import { DogComponent } from './components/dog/dog.component';
 
 @NgModule({
-  declarations: [DogsComponent, DogsListCardComponent],
+  declarations: [DogsComponent, DogsListCardComponent, DogComponent],
   imports: [
     CommonModule,
-    DogsStoreModule
+    DogsStoreModule,
+    RouterModule
   ],
   providers: [
     DogsService,
