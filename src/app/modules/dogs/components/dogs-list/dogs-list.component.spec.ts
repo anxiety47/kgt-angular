@@ -39,7 +39,7 @@ describe('DogsComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(DogsComponent);
-    dogsService = TestBed.get(DogsService);
+    dogsService = TestBed.inject(DogsService);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

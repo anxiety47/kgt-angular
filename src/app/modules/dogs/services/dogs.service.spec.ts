@@ -12,12 +12,12 @@ describe('DogsService', () => {
       imports: [StoreModule.forRoot({})],
     });
 
-    store = TestBed.get(Store);
-    dogsService = TestBed.get(DogsService);
+    store = TestBed.inject(Store);
+    dogsService = TestBed.inject(DogsService);
   });
 
   it('should be created', () => {
-    const service: DogsService = TestBed.get(DogsService);
+    const service: DogsService = TestBed.inject(DogsService);
     expect(service).toBeTruthy();
   });
 
