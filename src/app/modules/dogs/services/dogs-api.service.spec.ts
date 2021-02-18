@@ -1,15 +1,15 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+import { DogsApiService } from './dogs-api.service';
 
-import { AuthenticationService } from './authentication.service';
-
-describe('AuthenticationService', () => {
+describe('DogsApiService', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    imports: [ HttpClientTestingModule ]
+    imports: [ HttpClientTestingModule ],
+    providers: [ DogsApiService ]
   }));
 
   it('should be created', () => {
-    const service: AuthenticationService = TestBed.inject(AuthenticationService);
+    const service: DogsApiService = TestBed.inject(DogsApiService);
     expect(service).toBeTruthy();
   });
 });

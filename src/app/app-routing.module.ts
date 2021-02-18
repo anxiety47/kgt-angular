@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent } from './core/authentication/login-form/login-form.component';
 import { HomeComponent } from './modules/home/home/home.component';
-import { DogsComponent } from './modules/dogs/components/dogs/dogs.component';
+import { DogsComponent } from './modules/dogs/components/dogs-list/dogs-list.component';
+import { DogComponent } from './modules/dogs/components/dog/dog.component';
 
 const appRoutes: Routes = [
   { path: 'login-form', component: LoginFormComponent },
   { path: 'dogs', component: DogsComponent},
+  { path: 'dogs/:id', component: DogComponent},
   { path: '', component: HomeComponent }
   // TODO: add default path and pageNotFoundComponent
 

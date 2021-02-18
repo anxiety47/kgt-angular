@@ -1,16 +1,16 @@
 import { Dog } from "@app/shared/models/dog";
 import { Action } from "@ngrx/store";
 
-export class SetDogs implements Action {
-  public readonly type = '[dogs] setDogs';
+export class SetAllDogsAction implements Action {
+  public readonly type = '[dogs] setAllDogs';
 
   constructor(public dogs: Dog[]) {}
 }
 
-export class GetDogs implements Action {
-  public readonly type = '[dogs] getDogs';
+export class GetAllDogsAction implements Action {
+  public readonly type = '[dogs] getAllDogs';
 
   constructor() {}
 }
 
-export type DogActions = SetDogs | GetDogs;
+export type DogActions = SetAllDogsAction | GetAllDogsAction;
