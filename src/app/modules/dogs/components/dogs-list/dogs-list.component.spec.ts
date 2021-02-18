@@ -1,4 +1,3 @@
-
 import { Component, Injectable, Input } from '@angular/core';
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Dog } from '@app/shared/models/dog';

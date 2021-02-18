@@ -5,9 +5,15 @@ export function dogsReducer(state: DogsState = initialDogState, action: DogActio
   if (!action) return state;
   switch (action.type) {
     case '[dogs] setAllDogs':
-      return { ...state, dogs: action.dogs };
+      return {
+        ...state,
+        dogs: action.dogs
+      };
     case '[dogs] getAllDogs':
-      return { ...state, ongoingActions: [ ...state.ongoingActions, action.type ] };
+      return { 
+        ...state, 
+        ongoingActions: [ ...state.ongoingActions, action.type ]
+      };
     default:
       return state;
   }

@@ -14,6 +14,5 @@ export class DogComponent implements OnInit {
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
-
   }
 }
