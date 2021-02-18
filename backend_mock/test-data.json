@@ -4,54 +4,54 @@
         "id": "1",
         "name": "Puszek",
         "breed": "Owczarek niemiecki",
-        "dateOfBirth": "",
+        "dateOfBirth": "2020-01-01",
         "level": "Ekspert",
-        "workmode": "",
+        "workmode": "Tropiący",
         "notes": "notatki1"
       },
       {
         "id": "2",
         "name": "Azor",
         "breed": "Golden retriever",
-        "dateOfBirth": "",
+        "dateOfBirth": "2020-01-01",
         "level": "Zaawansowany",
-        "workmode": "",
+        "workmode": "Tropiący",
         "notes": "notatki2"
       },
       {
         "id": "3",
         "name": "Reks",
         "breed": "Labrador",
-        "dateOfBirth": "",
+        "dateOfBirth": "2020-01-01",
         "level": "Nowy",
-        "workmode": "",
+        "workmode": "Tropiący",
         "notes": "notatki3"
       },
       {
         "id": "4",
         "name": "Alex",
         "breed": "Bernardyn",
-        "dateOfBirth": "",
+        "dateOfBirth": "2020-01-01",
         "level": "Początkujący",
-        "workmode": "",
+        "workmode": "Tropiący",
         "notes": "notatki4"
       },
       {
         "id": "5",
         "name": "Max",
         "breed": "Jamnik",
-        "dateOfBirth": "",
+        "dateOfBirth": "2020-01-01",
         "level": "Średniozaawansowany",
-        "workmode": "",
+        "workmode": "Tropiący",
         "notes": "notatki5"
       },
       {
         "id": "6",
         "name": "Pimpek",
         "breed": "Wyżeł",
-        "dateOfBirth": "",
+        "dateOfBirth": "2020-01-01",
         "level": "Ekspert",
-        "workmode": "",
+        "workmode": "Tropiący",
         "notes": "notatki6"
       }
     ]
