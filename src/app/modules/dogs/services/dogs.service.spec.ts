@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Store, StoreModule } from '@ngrx/store';
-import { GetAllDogs } from '../store/actions';
+import { GetAllDogsAction } from '../store/actions';
 import { DogsService } from './dogs.service';
 
 describe('DogsService', () => {
@@ -24,6 +24,6 @@ describe('DogsService', () => {
   it('should dispatch action that gets all dogs data', () => {
     let tmp = spyOn(store, 'dispatch');
     dogsService.getAllDogs();
-    expect(tmp).toHaveBeenCalledWith( new GetAllDogs() );
+    expect(tmp).toHaveBeenCalledWith( new GetAllDogsAction() );
   });
 });

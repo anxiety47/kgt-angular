@@ -3,7 +3,7 @@ import { Dog } from "@app/shared/models/dog";
 import { Actions, Effect, ofType } from "@ngrx/effects";
 import { map, mergeMap } from "rxjs/operators";
 import { DogsApiService } from "../services/dogs-api.service";
-import { GetAllDogs, SetAllDogs } from "./actions";
+import { GetAllDogsAction, SetAllDogsAction } from "./actions";
 
 @Injectable()
 export class DogsEffects {
@@ -12,7 +12,7 @@ export class DogsEffects {
     @Effect()
     getAllDogs$ = this.action$.pipe( ofType('[dogs] getAllDogs'), 
     
-    mergeMap( (action: GetAllDogs) => this.dogsApiService.getAllDogs().pipe( 
-      map( (data: Dog[]) => new SetAllDogs(data) ) ) )
+    mergeMap( (action: GetAllDogsAction) => this.dogsApiService.getAllDogs().pipe( 
+      map( (data: Dog[]) => new SetAllDogsAction(data) ) ) )
     );
 }
