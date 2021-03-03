@@ -1,58 +1,50 @@
 {
-    "dogs" : [
+  "dog1": {
+    "id": "1",
+    "name": "Puszek",
+    "breed": "Owczarek niemiecki",
+    "guideName": "Janusz Kowalski",
+    "dateOfBirth": "2020-01-01",
+    "level": "Ekspert",
+    "workmode": "Tropiący",
+    "notes": "notatki1"
+  },  
+  "dogs" : [
       {
         "id": "1",
         "name": "Puszek",
         "breed": "Owczarek niemiecki",
-        "dateOfBirth": "2020-01-01",
-        "level": "Ekspert",
-        "workmode": "Tropiący",
-        "notes": "notatki1"
+        "guideName": "Janusz Kowalski"
       },
       {
         "id": "2",
         "name": "Azor",
         "breed": "Golden retriever",
-        "dateOfBirth": "2020-01-01",
-        "level": "Zaawansowany",
-        "workmode": "Tropiący",
-        "notes": "notatki2"
+        "guideName": "Janusz Kowalski"
       },
       {
         "id": "3",
         "name": "Reks",
         "breed": "Labrador",
-        "dateOfBirth": "2020-01-01",
-        "level": "Nowy",
-        "workmode": "Tropiący",
-        "notes": "notatki3"
+        "guideName": "Janusz Kowalski"
       },
       {
         "id": "4",
         "name": "Alex",
         "breed": "Bernardyn",
-        "dateOfBirth": "2020-01-01",
-        "level": "Początkujący",
-        "workmode": "Tropiący",
-        "notes": "notatki4"
+        "guideName": "Janusz Kowalski"
       },
       {
         "id": "5",
         "name": "Max",
         "breed": "Jamnik",
-        "dateOfBirth": "2020-01-01",
-        "level": "Średniozaawansowany",
-        "workmode": "Tropiący",
-        "notes": "notatki5"
+        "guideName": "Janusz Kowalski"
       },
       {
         "id": "6",
         "name": "Pimpek",
         "breed": "Wyżeł",
-        "dateOfBirth": "2020-01-01",
-        "level": "Ekspert",
-        "workmode": "Tropiący",
-        "notes": "notatki6"
+        "guideName": "Janusz Kowalski"
       }
     ]
   }
