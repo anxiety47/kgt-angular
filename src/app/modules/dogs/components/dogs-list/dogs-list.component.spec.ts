@@ -1,6 +1,6 @@
 import { Component, Injectable, Input } from '@angular/core';
 import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-import { Dog } from '@app/shared/models/dog';
+import { DogBasicData } from '@app/shared/models/dog';
 import { Observable, of } from 'rxjs';
 import { DogsService } from '../../services/dogs.service';
 import { DogsComponent } from './dogs-list.component';
@@ -8,7 +8,7 @@ import { DogsComponent } from './dogs-list.component';
 // TODO: move mocks to separate files
 @Injectable()
 class DogsServiceMock {
-  dogs$: Observable<Dog[]> = of();
+  dogs$: Observable<DogBasicData[]> = of();
 
   public getAllDogs(): void {}
 }
@@ -18,7 +18,7 @@ class DogsServiceMock {
   template: '<p>Mock for DogsListCardComponent</p>'
 })
 class DogsListCardComponentMock {
-  @Input() dog: Dog;
+  @Input() dog: DogBasicData;
 }
 
 describe('DogsComponent', () => {

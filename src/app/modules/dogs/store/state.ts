@@ -1,7 +1,7 @@
-import { Dog, DogLevel } from "@app/shared/models/dog";
+import { DogBasicData, DogLevel } from "@app/shared/models/dog";
 
 export interface DogsState {
-  dogs: Dog[];
+  dogs: DogBasicData[];
   ongoingActions: string[];
 }
 

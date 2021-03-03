@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Dog } from '@app/shared/models/dog';
+import { DogBasicData } from '@app/shared/models/dog';
 import { Subscription } from 'rxjs';
 import { DogsService } from '../../services/dogs.service';
 
@@ -11,13 +11,13 @@ import { DogsService } from '../../services/dogs.service';
 
 export class DogsComponent implements OnInit, OnDestroy {
 
-  public dogs: Dog[];
+  public dogs: DogBasicData[];
   private dogsSubscription: Subscription;
   
   constructor(private dogsService: DogsService) { }
 
   ngOnInit() {
-    this.dogsSubscription = this.dogsService.dogs$.subscribe( (dogs: Dog[]) => {
+    this.dogsSubscription = this.dogsService.dogs$.subscribe( (dogs: DogBasicData[]) => {
       this.dogs = dogs;
     });
     this.dogsService.getAllDogs();

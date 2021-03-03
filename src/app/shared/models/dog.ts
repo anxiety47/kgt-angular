@@ -6,7 +6,7 @@ export enum DogLevel {
   Expert = 'Ekspert'
 }
 
-export class Dog {
+export class DogBasicData {
   public id: number;
   public name: string;
   public breed: string;

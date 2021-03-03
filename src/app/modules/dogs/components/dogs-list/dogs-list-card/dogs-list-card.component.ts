@@ -1,6 +1,6 @@
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { Dog } from '@app/shared/models/dog';
+import { DogBasicData } from '@app/shared/models/dog';
 
 @Component({
   selector: 'app-dogs-list-card',
@@ -9,7 +9,7 @@ import { Dog } from '@app/shared/models/dog';
 })
 export class DogsListCardComponent implements OnInit {
 
-  @Input() dog: Dog;
+  @Input() dog: DogBasicData;
   
   constructor() { }
 
