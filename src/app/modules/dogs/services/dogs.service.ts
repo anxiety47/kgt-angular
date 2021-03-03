@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { GetAllDogsAction } from '../store/actions';
-import { getAllDogsSelector } from '../store/selectors';
+import { GetAllDogsAction, GetDogByIdAction } from '../store/actions';
+import { getAllDogsSelector, getCurrentDogSelector } from '../store/selectors';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +9,15 @@ import { getAllDogsSelector } from '../store/selectors';
 export class DogsService {
 
   public dogs$ = this.store.select(getAllDogsSelector);
+  public currentDog$ = this.store.select(getCurrentDogSelector);
 
   constructor(private store: Store<any>) { }
 
   public getAllDogs(): void {
     this.store.dispatch( new GetAllDogsAction() );
+
+  }
+  public getDogById(id: string): void {
+    this.store.dispatch( new GetDogByIdAction(id) );
   }
 }

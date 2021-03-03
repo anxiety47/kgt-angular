@@ -8,7 +8,17 @@
     "level": "Ekspert",
     "workmode": "Tropiący",
     "notes": "notatki1"
-  },  
+  },
+  "dog2": {
+    "id": "2",
+    "name": "Azor",
+    "breed": "Golden retriever",
+    "guideName": "Janusz Kowalski",
+    "dateOfBirth": "2020-01-01",
+    "level": "Ekspert",
+    "workmode": "Tropiący",
+    "notes": "notatki1"
+  },
   "dogs" : [
       {
         "id": "1",

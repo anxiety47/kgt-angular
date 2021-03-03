@@ -17,9 +17,7 @@ export class DogsComponent implements OnInit, OnDestroy {
   constructor(private dogsService: DogsService) { }
 
   ngOnInit() {
-    this.dogsSubscription = this.dogsService.dogs$.subscribe( (dogs: DogBasicData[]) => {
-      this.dogs = dogs;
-    });
+    this.dogsSubscription = this.dogsService.dogs$.subscribe((dogs: DogBasicData[]) => this.dogs = dogs);
     this.dogsService.getAllDogs();
   }
 
