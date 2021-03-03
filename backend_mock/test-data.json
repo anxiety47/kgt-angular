@@ -19,6 +19,46 @@
     "workmode": "Tropiący",
     "notes": "notatki1"
   },
+  "dog3": {
+    "id": "2",
+    "name": "Reks",
+    "breed": "Labrador",
+    "guideName": "Janusz Kowalski",
+    "dateOfBirth": "2020-01-01",
+    "level": "Ekspert",
+    "workmode": "Tropiący",
+    "notes": "notatki1"
+  },
+  "dog4": {
+    "id": "2",
+    "name": "Alex",
+    "breed": "Bernardyn",
+    "guideName": "Janusz Kowalski",
+    "dateOfBirth": "2020-01-01",
+    "level": "Ekspert",
+    "workmode": "Tropiący",
+    "notes": "notatki1"
+  },
+  "dog5": {
+    "id": "5",
+    "name": "Max",
+    "breed": "Jamnik",
+    "guideName": "Janusz Kowalski",
+    "dateOfBirth": "2020-01-01",
+    "level": "Ekspert",
+    "workmode": "Tropiący",
+    "notes": "notatki1"
+  },
+  "dog6": {
+    "id": "6",
+    "name": "Pimpek",
+    "breed": "Wyżeł",
+    "guideName": "Janusz Kowalski",
+    "dateOfBirth": "2020-01-01",
+    "level": "Ekspert",
+    "workmode": "Tropiący",
+    "notes": "notatki1"
+  },
   "dogs" : [
       {
         "id": "1",
